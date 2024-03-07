@@ -7,7 +7,7 @@ CLI application on creating a SVG image
 
 ## Installation
 
-https://justin-hunter1.github.io/10-challenge/
+https://github.com/justin-hunter1/10-challenge
 
 
 ## License
