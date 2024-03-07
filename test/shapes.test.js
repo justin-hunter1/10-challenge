@@ -1,19 +1,19 @@
 // Declarations
-const { Circle, Square, Triangle } = require("./lib/shapes.js");
+const { Circle, Square, Triangle } = require("../lib/shapes.js");
 
 // Test Cases
 describe("Circle test", () => {
-    test("test for a circle with a green background", () => {
+    test("test for a circle with a green background, white text", () => {
       const shapes = new Circle();
       shapes.setColor("green");
       shapes.textColor("white");
       shapes.text("test");
-      expect(shapes.render()).toEqual('<?xml version="1.0" standalone="no"?>\n<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">\n<circle cx="150" cy="120" r="70" fill="green" />\n<text x="150" y="130" text-anchor="middle" font-size="40" fill="white">test</text></svg>`');
+      expect(shapes.render()).toEqual('<?xml version="1.0" standalone="no"?>\n<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">\n<circle cx="150" cy="120" r="70" fill="green" />\n<text x="150" y="130" text-anchor="middle" font-size="40" fill="white">test</text></svg>');
     });
 });
   
   describe("Square test", () => {
-    test("test for a square with a orange background", () => {
+    test("test for a square with a orange background, white text", () => {
       const shapes = new Square();
       shapes.setColor("orange");
       shapes.textColor("white");
@@ -23,7 +23,7 @@ describe("Circle test", () => {
 });
 
   describe("Triangle test", () => {
-    test("test for a triangle with a blue background", () => {
+    test("test for a triangle with a blue background, white text", () => {
       const shapes = new Triangle();
       shapes.setColor("blue");
       shapes.textColor("white");

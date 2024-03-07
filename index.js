@@ -34,7 +34,7 @@ const questions = [
 
 // create file from results of questions
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => err ? console.log(err) : console.log("Generated logo.svg"))
+    fs.writeFile(fileName, data, (err) => err ? console.log(err) : console.log("Generated logo.svg"));
 }
 
 function init() {
